@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Advanced Calculator</h1>
+    <form action="CalculatorServlet" method="POST">
+        <div>
+            <label for="num1">Enter first number:</label>
+            <input type="text" id="num1" name="num1">
+        </div>
+        <div>
+            <label for="num2">Enter second number:</label>
+            <input type="text" id="num2" name="num2">
+        </div>
+        <div>
+            <label for="operator">Choose an operation:</label>
+            <select name="operator" id="operator">
+                <option value="add">Add (+)</option>
+                <option value="subtract">Subtract (-)</option>
+                <option value="multiply">Multiply (×)</option>
+                <option value="divide">Divide (÷)</option>
+            </select>
+        </div>
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>
